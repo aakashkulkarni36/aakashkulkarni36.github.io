@@ -1,16 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- <meta charset="UTF-8" /> -->
-		<meta
-			name="description"
-			content="Aakash Kulkarni's personal website showcasing projects, blog posts, and more about web development and technology."
-		/>
+		<meta charset="utf-8" />
+		<meta name="description" content="Aakash Kulkarni Portfolio" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Aakash Kulkarni Portfolio</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>Hello There!</h1>
-		<h1>This site is in process of building</h1>
+		<div class="root">
+			<div class="glass-effect">
+				<div class="navbar-main">
+					<div class="navbar">
+						<div class="navbar-brand">I'm, Aakash Kulkarni</div>
+						<ul class="nav justify-content-end">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#education"
+									>Education</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#experience"
+									>Experience</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact"
+									>Contact Me</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Here starts the content below the nav bar -->
+
+				<div id="home" class="section">
+					<div class="sectionHeading">
+						<h1>Hi, I'm Aakash Kulkarni 👋</h1>
+						<p>
+							Welcome to my portfolio! I'm a passionate Software
+							Developer and Researcher, eager to share my journey
+							and projects with you. Feel free to explore my work,
+							learn about my experiences, and connect with me for
+							any collaborations or inquiries.
+						</p>
+						<br />
+						<br />
+						<p>
+							Currently, I am pursuing my Master's degree in
+							Computer Science at Oregon State University,
+							focusing on software engineering and
+							high-performance computing. I am keenly interested
+							in developing innovative solutions and am always
+							eager to learn new technologies and methodologies.
+						</p>
+					</div>
+				</div>
+
+				<div class="glass-effect" id="experience">
+					<div id="education" class="section">
+						<div class="sectionHeading">
+							<h2>Education</h2>
+						</div>
+						<div class="container">
+							<div class="row">
+								<!-- Card for Recent Education -->
+								<div
+									class="col-md-6 d-flex align-items-stretch"
+								>
+									<div class="card mb-4 flex-fill">
+										<div class="card-header text-center">
+											<h4>
+												Oregon State University,
+												Corvallis
+											</h4>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												Master's in Computer Science
+											</h5>
+											<p class="card-text">
+												Sept 2022 - March 2025
+											</p>
+											<p class="card-text">
+												GPA: 3.91/4.0
+											</p>
+											<p class="card-text">
+												<strong
+													>Relevant Courses:</strong
+												>
+											</p>
+											<ul>
+												<li>
+													Software Engineering
+													Methodologies
+												</li>
+												<li>
+													Software Evolution and
+													Maintenance
+												</li>
+												<li>
+													Mobile Application
+													Development
+												</li>
+												<li>Parallel Programming</li>
+												<li>Database Management</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- Card for Previous Education -->
+								<div
+									class="col-md-6 d-flex align-items-stretch"
+								>
+									<div class="card mb-4 flex-fill">
+										<div class="card-header text-center">
+											<h4>
+												Jawaharlal Nehru Technological
+												University, Hyderabad
+											</h4>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">
+												Bachelor's in Computer Science
+											</h5>
+											<p class="card-text">
+												Jul 2018 - Aug 2022
+											</p>
+											<p class="card-text">
+												GPA: 7.25/10.0
+											</p>
+											<p class="card-text">
+												<strong
+													>Relevant Courses:</strong
+												>
+											</p>
+											<ul>
+												<li>Data Structures</li>
+												<li>Operating Systems</li>
+												<li>
+													Database Management Systems
+												</li>
+												<li>Computer Networks</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 
+				<div class="glass-effect" id="experience"></div>
+				<div id="experience" class="section">
+					<div class="sectionHeading">
+						<h2>Experience</h2>
+					</div>
+					<h5>Graduate Research Assistant</h5>
+					<p>
+						Oregon State University, Corvallis, Oregon (May 2024 -
+						Present)
+					</p>
+					<ul>
+						<li>
+							Collaborated with a dedicated HPC research team
+							(ANSWER LAB) to conduct fuzzing research,
+							identifying and analyzing software bugs in
+							scientific applications on High Performance
+							Computing (HPC) systems.
+						</li>
+						<li>
+							Tested REST APIs as research initiatives, focusing
+							on methodologies and techniques to effectively
+							identify faults.
+						</li>
+						<li>
+							Configured and deployed AFL++ for fuzz testing,
+							orchestrated job launches on HPC systems to enhance
+							testing coverage.
+						</li>
+						<li>
+							Performed differential driver testing for hardware
+							components, checking for discrepancies and potential
+							issues.
+						</li>
+						<li>
+							Conducted faults benchmark testing and utilized
+							grammar-based testing approaches to identify
+							vulnerabilities.
+						</li>
+					</ul>
+
+					<h5>Software Developer Intern</h5>
+					<p>
+						Zemoso Technologies, Hyderabad, India (Feb 2022 - Apr
+						2022)
+					</p>
+					<ul>
+						<li>
+							Architected web applications with a focus on
+							efficient, and maintainable code using Spring Boot,
+							MySQL, and ReactJs.
+						</li>
+						<li>
+							Facilitated code reviews and utilized Git for
+							version control to uphold software quality.
+						</li>
+						<li>
+							Collaborated with a team of developers to
+							troubleshoot and resolve software defects, enhancing
+							product performance and reliability.
+						</li>
+					</ul>
+
+					<h5>Mobile Application Developer Intern</h5>
+					<p>FindMind Analytics, Remote (Jul 2021 - Sept 2021)</p>
+					<ul>
+						<li>
+							Developed mobile banking app for teenagers with
+							parental controls, using Flutter for cross-platform
+							deployment.
+						</li>
+						<li>
+							Enhanced app performance and scalability by
+							integrating Firebase, improving speed and
+							reliability.
+						</li>
+						<li>
+							Launched the ZuPay app on iOS and Android, reaching
+							over 10,000 users in the latest assessment.
+						</li>
+					</ul>
+				</div>
+
+				<div class="glass-effect" id="skills">
+					<div id="skills" class="section">
+						<div class="sectionHeading">
+							<h2>Skills</h2>
+						</div>
+						<ul>
+							<li>
+								<strong>Languages and Frameworks:</strong>
+								Python, C++, Kotlin, JavaScript, Node, Express,
+								Spring Boot, LaTeX, Docker, Flutter, React
+							</li>
+							<li>
+								<strong
+									>Databases and Cloud Technologies:</strong
+								>
+								MySQL, MongoDB, VS Code, AWS, Google Cloud,
+								Heroku, Firebase
+							</li>
+							<li>
+								<strong
+									>Developer Tools and Software
+									Practices:</strong
+								>
+								REST APIs, JIRA, Agile, GitHub, Visual Studio
+								Code
+							</li>
+						</ul>
+					</div>
+				</div> -->
+
+				<div class="section" id="experience">
+					<div class="sectionHeading">
+						<h2>Experience</h2>
+					</div>
+					<div class="container">
+						<!-- Experience Card 1 -->
+						<div class="row mb-4">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header text-center">
+										<h5>Graduate Research Assistant</h5>
+										<p>
+											Oregon State University, Corvallis
+										</p>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>
+												Collaborated with a dedicated
+												HPC research team (ANSWER LAB)
+												to conduct fuzzing research,
+												identifying and analyzing
+												software bugs in scientific
+												applications on High Performance
+												Computing (HPC) systems.
+											</li>
+											<li>
+												Tested REST APIs as research
+												initiatives, focusing on
+												methodologies and techniques to
+												effectively identify faults.
+											</li>
+											<li>
+												Configured and deployed AFL++
+												for fuzz testing, orchestrated
+												job launches on HPC systems to
+												enhance testing coverage.
+											</li>
+											<li>
+												Performed differential driver
+												testing for hardware components,
+												checking for discrepancies and
+												potential issues.
+											</li>
+											<li>
+												Conducted faults benchmark
+												testing and utilized
+												grammar-based testing approaches
+												to identify vulnerabilities.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Experience Card 2 -->
+						<div class="row mb-4">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header text-center">
+										<h5>Software Developer Intern</h5>
+										<p>Zemoso Technologies, Hyderabad</p>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>
+												Architected web applications
+												with a focus on efficient, and
+												maintainable code using Spring
+												Boot, MySQL, and ReactJs.
+											</li>
+											<li>
+												Facilitated code reviews and
+												utilized Git for version control
+												to uphold software quality.
+											</li>
+											<li>
+												Collaborated with a team of
+												developers to troubleshoot and
+												resolve software defects,
+												enhancing product performance
+												and reliability.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Experience Card 3 -->
+						<div class="row mb-4">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header text-center">
+										<h5>
+											Mobile Application Developer Intern
+										</h5>
+										<p>FindMind Analytics, Remote</p>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>
+												Developed mobile banking app for
+												teenagers with parental
+												controls, using Flutter for
+												cross-platform deployment.
+											</li>
+											<li>
+												Enhanced app performance and
+												scalability by integrating
+												Firebase, improving speed and
+												reliability.
+											</li>
+											<li>
+												Launched the ZuPay app on iOS
+												and Android, reaching over
+												10,000 users in the latest
+												assessment.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section" id="skills">
+					<div class="sectionHeading">
+						<h2>Skills</h2>
+					</div>
+					<div class="container">
+						<div class="row">
+							<!-- Skills Card 1 -->
+							<div class="col-md-4 d-flex align-items-stretch">
+								<div class="card mb-4 flex-fill">
+									<div class="card-header text-center">
+										<h5>Languages and Frameworks</h5>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>Python</li>
+											<li>C++</li>
+											<li>Kotlin</li>
+											<li>JavaScript</li>
+											<li>Node, Express</li>
+											<li>Spring Boot</li>
+											<li>LaTeX</li>
+											<li>Docker</li>
+											<li>Flutter</li>
+											<li>React</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Skills Card 2 -->
+							<div class="col-md-4 d-flex align-items-stretch">
+								<div class="card mb-4 flex-fill">
+									<div class="card-header text-center">
+										<h5>
+											Databases and Cloud Technologies
+										</h5>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>MySQL</li>
+											<li>MongoDB</li>
+											<li>VS Code</li>
+											<li>AWS</li>
+											<li>Google Cloud</li>
+											<li>Heroku</li>
+											<li>Firebase</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Skills Card 3 -->
+							<div class="col-md-4 d-flex align-items-stretch">
+								<div class="card mb-4 flex-fill">
+									<div class="card-header text-center">
+										<h5>
+											Developer Tools and Software
+											Practices
+										</h5>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>REST APIs</li>
+											<li>JIRA</li>
+											<li>Agile</li>
+											<li>GitHub</li>
+											<li>Visual Studio Code</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="glass-effect" id="contact">
+					<div id="contact" class="section">
+						<div class="sectionHeading">
+							<h2>Contact Me</h2>
+						</div>
+						<div class="contact-links">
+							<a
+								href="./assets/Aakash_Kulkarni_resume.pdf"
+								class="contact-link"
+								target="_blank"
+								aria-label="Resume"
+							>
+								<i class="fas fa-file-alt"></i> Resume
+							</a>
+							<a
+								href="mailto:kulkaraa@oregonstate.edu"
+								class="contact-link"
+								aria-label="Email"
+							>
+								<i class="fas fa-envelope"></i> Email
+							</a>
+							<a
+								href="https://www.linkedin.com/in/aakashkulkarni36/"
+								class="contact-link"
+								target="_blank"
+								aria-label="LinkedIn"
+							>
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add Font Awesome for icons -->
+		<script
+			src="https://kit.fontawesome.com/a076d05399.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const links = document.querySelectorAll(
+					'a.nav-link[href^="#"]'
+				);
+
+				links.forEach((link) => {
+					link.addEventListener("click", function (e) {
+						e.preventDefault();
+
+						const hash = this.getAttribute("href");
+
+						console.log("Link clicked:", hash);
+						const targetElement = document.querySelector(hash);
+						console.log("Target element:", targetElement);
+
+						if (targetElement) {
+							targetElement.scrollIntoView({
+								behavior: "smooth",
+								block: "start",
+							});
+						}
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
