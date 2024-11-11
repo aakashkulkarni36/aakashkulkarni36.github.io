@@ -28,7 +28,7 @@ body {
     text-align: center;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #FF9933;
 }
 
 .section p,
@@ -49,7 +49,7 @@ body {
 }
 
 a {
-    color: #007bff;
+    color: #FF9933;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a:hover {
 }
 
 #home {
-    background: #007bff;
+    background: #FF9933;
     color: #fff;
 }
 
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .contact-link {
-    color: #007bff;
+    color: #FF9933;
     font-size: 1.2em;
     text-decoration: none;
     display: flex;
@@ -157,7 +157,7 @@ a:hover {
 }
 
 .card-header {
-    background-color: #007bff;
+    background-color: #FF9933;
     color: #fff;
     font-weight: bold;
     padding: 10px;
