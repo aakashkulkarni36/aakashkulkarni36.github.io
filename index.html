@@ -1,273 +1,836 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakash Kulkarni | Computer Science Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Source Serif Pro', serif; }
-        .highlight { color: #2b3a4a; }
-        .dark .highlight { color: #e2e8f0; }
-    </style>
-</head>
-<body class="bg-stone-50 dark:bg-slate-900 transition-colors duration-300">
-    <!-- Navigation -->
-    <nav class="sticky top-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm z-50 border-b">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-semibold dark:text-stone-100">Aakash Kulkarni</h1>
-            <div class="flex items-center gap-6">
-                <button id="themeToggle" class="p-2 rounded-lg bg-stone-200 dark:bg-slate-700">
-                    <span class="dark:hidden">🌙</span>
-                    <span class="hidden dark:inline">☀️</span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="container mx-auto px-4 py-20 text-center">
-        <h1 class="text-4xl font-bold mb-4 dark:text-stone-100">
-            <span class="bg-gradient-to-r from-slate-700 to-slate-500 dark:from-stone-200 dark:to-stone-400 bg-clip-text text-transparent">
-                Aakash Kulkarni
-            </span>
-        </h1>
-        <p class="text-xl text-stone-600 dark:text-stone-300 mb-8">Graduate Research Assistant | Full Stack Developer</p>
-        <div class="flex flex-wrap justify-center gap-6 mt-8">
-            <a href="mailto:aakashkulkarni36@gmail.com" class="px-6 py-2 bg-stone-200 dark:bg-slate-700 rounded-full flex items-center gap-2">
-                <span class="text-stone-600 dark:text-stone-300">📧 aakashkulkarni36@gmail.com</span>
-            </a>
-            <a href="https://linkedin.com/in/aakashkulkarni36" target="_blank" class="px-6 py-2 bg-stone-200 dark:bg-slate-700 rounded-full flex items-center gap-2">
-                <span class="text-stone-600 dark:text-stone-300">🔗 linkedin.com/in/aakashkulkarni36</span>
-            </a>
-            <a href="https://github.com/aakashkulkarni36" target="_blank" class="px-6 py-2 bg-stone-200 dark:bg-slate-700 rounded-full flex items-center gap-2">
-                <span class="text-stone-600 dark:text-stone-300">💻 github.com/aakashkulkarni36</span>
-            </a>
-        </div>
-    </header>
-
-    <!-- Education -->
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-semibold mb-8 dark:text-stone-100 border-b pb-2">Academic Background</h2>
-        <div class="grid gap-8">
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm border">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-semibold dark:text-stone-100">Oregon State University</h3>
-                    <span class="text-stone-500 dark:text-stone-400">Mar 2023 - Mar 2025</span>
-                </div>
-                <p class="text-stone-600 dark:text-stone-300 mb-4">
-                    Master of Science in Computer Science (GPA: 3.91/4.00)<br>
-                    Coursework: High Performance Computing, Deep Learning, Parallel Programming<br>
-                    Research Focus: Heterogeneous bug detection in HPC systems under Dr. Manish Motwani
-                </p>
-            </div>
-
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm border">
-                <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-xl font-semibold dark:text-stone-100">Jawaharlal Nehru Technological University</h3>
-                    <span class="text-stone-500 dark:text-stone-400">Jul 2018 - Aug 2022</span>
-                </div>
-                <p class="text-stone-600 dark:text-stone-300">
-                    Bachelor of Engineering in Computer Science (GPA: 7.25/10.00)<br>
-                    Core Studies: Data Structures, Operating Systems, Database Management
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Experience -->
-    <section class="container mx-auto px-4 py-12 bg-stone-100 dark:bg-slate-800">
-        <h2 class="text-3xl font-semibold mb-8 dark:text-stone-100 border-b pb-2">Professional Experience</h2>
-        
-        <!-- OSU Research -->
-        <div class="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-sm border mb-8">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-semibold dark:text-stone-100">Graduate Research Assistant</h3>
-                <span class="text-stone-500 dark:text-stone-400">May 2024 - Present</span>
-            </div>
-            <p class="text-stone-600 dark:text-stone-300 mb-4">
-                Oregon State University College of Engineering, Corvallis, OR<br>
-                Leading research in software testing methodologies for high-performance computing systems.
-            </p>
-            <ul class="list-disc pl-6 space-y-2 text-stone-600 dark:text-stone-300">
-                <li>Pioneered fuzzing research targeting heterogeneous bugs in HPC environments</li>
-                <li>Designed and deployed AFL++ configurations for large-scale grammar-based testing</li>
-                <li>Conducted differential driver testing across diverse hardware architectures</li>
-                <li>Developed benchmark suites for fault simulation in scientific applications</li>
-            </ul>
-        </div>
-
-        <!-- Zemoso Technologies -->
-        <div class="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-sm border mb-8">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-semibold dark:text-stone-100">Software Developer Intern</h3>
-                <span class="text-stone-500 dark:text-stone-400">Feb 2022 - Apr 2022</span>
-            </div>
-            <p class="text-stone-600 dark:text-stone-300 mb-4">
-                Zemoso Technologies, Hyderabad, India<br>
-                Contributed to enterprise web application development using modern software practices.
-            </p>
-            <ul class="list-disc pl-6 space-y-2 text-stone-600 dark:text-stone-300">
-                <li>Engineered backend services with Spring Boot and MySQL</li>
-                <li>Implemented CI/CD pipelines reducing deployment time by 40%</li>
-                <li>Conducted code reviews improving code quality metrics by 25%</li>
-            </ul>
-        </div>
-
-        <!-- FindMind Analytics -->
-        <div class="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-sm border">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-semibold dark:text-stone-100">Mobile Application Developer</h3>
-                <span class="text-stone-500 dark:text-stone-400">Jul 2021 - Sept 2021</span>
-            </div>
-            <p class="text-stone-600 dark:text-stone-300 mb-4">
-                FindMind Analytics (Remote)<br>
-                Spearheaded development of financial application for adolescent users.
-            </p>
-            <ul class="list-disc pl-6 space-y-2 text-stone-600 dark:text-stone-300">
-                <li>Architected cross-platform banking app using Flutter framework</li>
-                <li>Integrated Firebase services improving app performance by 35%</li>
-                <li>Launched ZuPay app with 10,000+ active users</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Technical Proficiencies -->
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-semibold mb-8 dark:text-stone-100 border-b pb-2">Technical Proficiencies</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg border">
-                <h3 class="font-semibold mb-4 dark:text-stone-100">Languages & Frameworks</h3>
-                <ul class="space-y-2 text-stone-600 dark:text-stone-300">
-                    <li>Python · Java · JavaScript · C++</li>
-                    <li>Spring Boot · React · Node.js · Flutter</li>
-                </ul>
-            </div>
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg border">
-                <h3 class="font-semibold mb-4 dark:text-stone-100">Systems & Platforms</h3>
-                <ul class="space-y-2 text-stone-600 dark:text-stone-300">
-                    <li>AWS (EC2, S3, RDS)</li>
-                    <li>Google Cloud · Firebase</li>
-                    <li>HPC Job Scheduling</li>
-                </ul>
-            </div>
-            <div class="bg-white dark:bg-slate-800 p-6 rounded-lg border">
-                <h3 class="font-semibold mb-4 dark:text-stone-100">Methodologies</h3>
-                <ul class="space-y-2 text-stone-600 dark:text-stone-300">
-                    <li>Agile Development</li>
-                    <li>CI/CD Pipelines</li>
-                    <li>Software Testing</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-	<!-- Add after Technical Proficiencies section -->
-
-<!-- Publications -->
-<section class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-semibold mb-8 dark:text-stone-100 border-b pb-2">Research Publications</h2>
-    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm border">
-        <h3 class="text-xl font-semibold dark:text-stone-100 mb-2">
-            "Automatically Detecting Heterogeneous Bugs in High-Performance Computing Scientific Software"
-        </h3>
-        <p class="text-stone-600 dark:text-stone-300 mb-4">
-            Davis, M., <span class="font-semibold">Kulkarni, A.</span>, et al. 
-            <em>arXiv preprint</em> arXiv:2501.09872 (2025)
-        </p>
-        <a href="https://arxiv.org/pdf/2501.09872" class="text-blue-600 dark:text-blue-400 hover:underline">
-            Access Full Publication ↗
-        </a>
-    </div>
-</section>
-
-<!-- Certifications -->
-<section class="container mx-auto px-4 py-12 bg-stone-100 dark:bg-slate-800">
-    <h2 class="text-3xl font-semibold mb-8 dark:text-stone-100 border-b pb-2">Professional Certifications</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white dark:bg-slate-700 p-6 rounded-lg border">
-            <h3 class="font-semibold mb-2 dark:text-stone-100">AWS Cloud Certification</h3>
-            <p class="text-stone-600 dark:text-stone-300">AICTE & Edu Skills Foundation</p>
-            <p class="text-sm text-stone-500 dark:text-stone-400 mt-2">Oct 2021 - Jan 2022</p>
-        </div>
-        
-        <div class="bg-white dark:bg-slate-700 p-6 rounded-lg border">
-            <h3 class="font-semibold mb-2 dark:text-stone-100">AWS Cloud Essential Skills</h3>
-            <p class="text-stone-600 dark:text-stone-300">Coursera</p>
-            <p class="text-sm text-stone-500 dark:text-stone-400 mt-2">Jun 2021</p>
-        </div>
-        
-        <div class="bg-white dark:bg-slate-700 p-6 rounded-lg border">
-            <h3 class="font-semibold mb-2 dark:text-stone-100">Oracle SQL Certification</h3>
-            <p class="text-stone-600 dark:text-stone-300">Oracle Corporation</p>
-            <p class="text-sm text-stone-500 dark:text-stone-400 mt-2">Apr 2020</p>
-        </div>
-    </div>
-</section>
-
-<!-- Achievements -->
-<section class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-semibold mb-8 dark:text-stone-100 border-b pb-2">Key Achievements</h2>
-    <div class="grid gap-6">
-        <div class="bg-white dark:bg-slate-800 p-6 rounded-lg border">
-            <div class="flex justify-between items-start">
-                <div>
-                    <h3 class="text-xl font-semibold dark:text-stone-100">1st Place Winner</h3>
-                    <p class="text-stone-600 dark:text-stone-300">OSU Winter 2024 Hackathon</p>
-                </div>
-                <span class="text-stone-500 dark:text-stone-400">Mar 2024</span>
-            </div>
-            <p class="text-stone-600 dark:text-stone-300 mt-4">
-                Developed "Guitar Hub" - A web application featuring AI-powered song analysis tools 
-                using OpenAI and Hugging Face models, combined with real-time pitch detection capabilities.
-            </p>
-        </div>
-        
-        <div class="bg-white dark:bg-slate-800 p-6 rounded-lg border">
-            <div class="flex justify-between items-start">
-                <div>
-                    <h3 class="text-xl font-semibold dark:text-stone-100">Published Researcher</h3>
-                    <p class="text-stone-600 dark:text-stone-300">Peer-Reviewed Conference Paper</p>
-                </div>
-                <span class="text-stone-500 dark:text-stone-400">Jan 2025</span>
-            </div>
-            <p class="text-stone-600 dark:text-stone-300 mt-4">
-                Contributed to groundbreaking research in HPC software testing methodologies,
-                resulting in publication in top-tier computer science conference proceedings.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Footer -->
-    <footer class="bg-stone-200 dark:bg-slate-900 mt-20">
-        <div class="container mx-auto px-4 py-8">
-            <div class="text-center text-stone-600 dark:text-stone-400">
-                © 2025 Aakash Kulkarni. All Rights Reserved.<br>
-                <div class="mt-2 flex justify-center gap-4">
-                    <a href="mailto:aakashkulkarni36@gmail.com" class="hover:text-stone-800 dark:hover:text-stone-300">Contact</a>
-                    <a href="https://linkedin.com/in/aakashkulkarni36" target="_blank" class="hover:text-stone-800 dark:hover:text-stone-300">LinkedIn</a>
-                    <a href="https://github.com/aakashkulkarni36" target="_blank" class="hover:text-stone-800 dark:hover:text-stone-300">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Theme Toggle with System Preference
-        const themeToggle = document.getElementById('themeToggle');
-        const htmlElement = document.documentElement;
-        
-        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const storedTheme = localStorage.getItem('theme') || (systemDark ? 'dark' : 'light');
-        htmlElement.classList.toggle('dark', storedTheme === 'dark');
-
-        themeToggle.addEventListener('click', () => {
-            const isDark = htmlElement.classList.toggle('dark');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        });
-    </script>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aakash Kulkarni | Portfolio</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							base: "#0b1220",
+							card: "rgba(15,23,42,0.75)",
+							accent: "#38bdf8",
+							glow: "#c084fc",
+						},
+						boxShadow: {
+							floating: "0 25px 60px rgba(56,189,248,0.18)",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="bg-base text-slate-100 antialiased">
+		<div class="fixed inset-0 pointer-events-none">
+			<div
+				class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.2),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(192,132,252,0.25),_transparent_60%)]"
+			></div>
+		</div>
+		<header
+			class="sticky top-0 z-30 border-b border-white/10 backdrop-blur-xl bg-base/85"
+		>
+			<div
+				class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center gap-4"
+			>
+				<!-- <p class="text-lg font-semibold tracking-wide">
+					Aakash Kulkarni
+				</p> -->
+				<nav
+					class="ml-auto flex flex-wrap gap-2 text-xs font-semibold tracking-[0.25em] uppercase"
+				>
+					<a
+						href="#summary"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Summary</a
+					>
+					<a
+						href="#education"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Education</a
+					>
+					<a
+						href="#experience"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Experience</a
+					>
+					<a
+						href="#skills"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Skills</a
+					>
+					<a
+						href="#projects"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Projects</a
+					>
+					<a
+						href="#publications"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Research</a
+					>
+					<a
+						href="#certifications"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Certs</a
+					>
+					<a
+						href="#achievements"
+						class="nav-link px-3 py-1.5 rounded-full border border-white/15 hover:border-accent transition"
+						>Achievements</a
+					>
+				</nav>
+			</div>
+		</header>
+		<main class="relative z-10 max-w-6xl mx-auto px-6 py-12 space-y-12">
+			<section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-center">
+				<div
+					class="bg-card border border-white/10 rounded-3xl p-8 shadow-floating space-y-6"
+				>
+					<p class="text-xs uppercase tracking-[0.35em] text-accent">
+						Portfolio
+					</p>
+					<h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+						Aakash Kulkarni
+					</h1>
+					<div class="flex flex-wrap gap-2 text-sm text-slate-300">
+						<span
+							class="px-3 py-1 rounded-full border border-white/15"
+							>www.aakashkulkarni.dev</span
+						>
+						<span
+							class="px-3 py-1 rounded-full border border-white/15"
+							>aakashkulkarni36@gmail.com</span
+						>
+						<span
+							class="px-3 py-1 rounded-full border border-white/15"
+							>linkedin.com/in/aakashkulkarni36</span
+						>
+						<span
+							class="px-3 py-1 rounded-full border border-white/15"
+							>github.com/aakashkulkarni36</span
+						>
+						<span
+							class="px-3 py-1 rounded-full border border-white/15"
+							>+1 (408) 592-4751</span
+						>
+					</div>
+					<p class="text-slate-200 text-lg leading-relaxed">
+						Graduated Master’s in Computer Science from
+						<span style="color: #d73f09">
+							Oregon State University</span
+						>
+						with proven research and industry experience in
+						high-performance computing, software testing, and
+						machine learning. Demonstrated expertise in designing
+						and deploying advanced fuzzing strategies, configuring
+						large-scale testing frameworks, and applying deep
+						learning to real-world problems. Excelled in parallel
+						programming and data-driven software engineering,
+						consistently delivering results in collaborative,
+						fast-paced environments. Seeking to leverage technical
+						acumen and problem-solving abilities to drive innovation
+						and impact in a full-time software engineering or
+						research role.
+					</p>
+				</div>
+				<div class="flex flex-col gap-6">
+					<div
+						class="relative w-64 h-64 mx-auto rounded-full border-4 border-white/20 shadow-floating overflow-hidden bg-gradient-to-br from-slate-900 to-slate-700"
+					>
+						<img
+							src="Aakash.jpg"
+							alt="Portrait of Aakash Kulkarni"
+							class="w-full h-full object-cover object-center"
+						/>
+						<div class="absolute inset-0 bg-black/15"></div>
+					</div>
+					<div class="grid grid-cols-2 gap-4 text-center">
+						<div
+							class="bg-card border border-white/10 rounded-2xl p-4"
+						>
+							<p class="text-3xl font-bold text-accent">3.91</p>
+							<p
+								class="text-xs uppercase tracking-[0.3em] text-slate-400"
+							>
+								Grad GPA
+							</p>
+						</div>
+						<div
+							class="bg-card border border-white/10 rounded-2xl p-4"
+						>
+							<p class="text-3xl font-bold text-accent">
+								2+ years
+							</p>
+							<p
+								class="text-xs uppercase tracking-[0.3em] text-slate-400"
+							>
+								Experinence
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				id="education"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-6"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-glow"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">
+						Education
+					</h2>
+				</div>
+				<div class="flex flex-col gap-6">
+					<article
+						class="grid gap-4 md:grid-cols-[3fr_1fr] md:items-center border border-white/10 rounded-2xl p-5 hover:border-accent/70 transition"
+					>
+						<div>
+							<h3 class="text-xl font-semibold">
+								Master’s in Computer Science
+							</h3>
+							<p class="text-slate-300">
+								Oregon State University, Corvallis
+							</p>
+							<p class="text-slate-200 mt-3">
+								Relevant Courses: High Performance Computing,
+								Deep Learning, Software Engineering
+								Methodologies, Software Evolution and
+								Maintenance, Mobile Application Development,
+								Parallel Programming | Advisor: Dr. Manish
+								Motwani
+							</p>
+						</div>
+						<div class="text-right text-sm text-slate-400">
+							<p>Mar 2023 – Jun 2025</p>
+							<p>GPA: 3.91/4.0</p>
+						</div>
+					</article>
+					<article
+						class="grid gap-4 md:grid-cols-[3fr_1fr] md:items-center border border-white/10 rounded-2xl p-5 hover:border-accent/70 transition"
+					>
+						<div>
+							<h3 class="text-xl font-semibold">
+								Bachelor’s in Computer Science
+							</h3>
+							<p class="text-slate-300">
+								Jawaharlal Nehru Technological University,
+								Hyderabad
+							</p>
+							<p class="text-slate-200 mt-3">
+								Relevant Courses: Data Structures, Operating
+								Systems, Database Management Systems, Computer
+								Networks
+							</p>
+						</div>
+						<div class="text-right text-sm text-slate-400">
+							<p>Jul 2018 – Aug 2022</p>
+							<p>GPA: 7.25/10.0</p>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section
+				id="experience"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-10"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-accent"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">
+						Professional Experience
+					</h2>
+				</div>
+				<div class="relative pl-6 border-l border-white/15 space-y-10">
+					<article class="relative">
+						<span
+							class="absolute -left-[13px] top-1 w-6 h-6 rounded-full bg-base border-4 border-accent"
+						></span>
+						<div
+							class="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4"
+						>
+							<header
+								class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3"
+							>
+								<div>
+									<h3 class="text-xl font-semibold">
+										Graduate Teaching Assistant
+									</h3>
+									<p class="text-slate-300">
+										College of Engineering | Oregon State
+										University — Corvallis, Oregon
+									</p>
+								</div>
+								<span class="text-sm text-slate-400"
+									>Mar 2025 – Jun 2025</span
+								>
+							</header>
+							<ul class="list-disc pl-5 space-y-2 text-slate-200">
+								<li>
+									Mentored over 100 students in Parallel
+									Programming, demystifying advanced concepts
+									and fostering academic growth.
+								</li>
+								<li>
+									Facilitated 8 weekly office hours, resolving
+									student queries and providing targeted
+									support for assignments and projects.
+								</li>
+								<li>
+									Evaluated and delivered actionable feedback
+									on programming projects, driving
+									improvements in software development skills
+									and analytical thinking.
+								</li>
+								<li>
+									Partnered with faculty to refine
+									instructional content and assessment
+									methods, elevating the courses overall
+									effectiveness and student engagement.
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="relative">
+						<span
+							class="absolute -left-[13px] top-1 w-6 h-6 rounded-full bg-base border-4 border-accent"
+						></span>
+						<div
+							class="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4"
+						>
+							<header
+								class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3"
+							>
+								<div>
+									<h3 class="text-xl font-semibold">
+										Graduate Research Assistant
+									</h3>
+									<p class="text-slate-300">
+										College of Engineering | Oregon State
+										University — Corvallis, Oregon
+									</p>
+								</div>
+								<span class="text-sm text-slate-400"
+									>May 2024 – Mar 2025</span
+								>
+							</header>
+							<ul class="list-disc pl-5 space-y-2 text-slate-200">
+								<li>
+									Conducted fuzzing research and contributed
+									to fuzzing research, focusing on
+									heterogeneous bugs and HPC systems which
+									enhanced the lab's understanding of
+									heterogeneous bug patterns.
+								</li>
+								<li>
+									Configured and deployed AFL++ for fuzz
+									testing improving the efficiency of software
+									testing and grammar-based testing, by
+									orchestrating job scheduling on HPC systems.
+								</li>
+								<li>
+									Performed differential driver testing for
+									heterogeneous bugs on divergent hardware,
+									which helped in identifying and analyzing
+									discrepancies effectively.
+								</li>
+								<li>
+									Executed faults benchmark testing and
+									created defects benchmarks for simulating
+									applications, successfully identifying
+									vulnerabilities in large-scale scientific
+									simulators.
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="relative">
+						<span
+							class="absolute -left-[13px] top-1 w-6 h-6 rounded-full bg-base border-4 border-accent"
+						></span>
+						<div
+							class="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4"
+						>
+							<header
+								class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3"
+							>
+								<div>
+									<h3 class="text-xl font-semibold">
+										Associate Software Developer
+									</h3>
+									<p class="text-slate-300">
+										Zemoso Technologies — Hyderabad, India
+									</p>
+								</div>
+								<span class="text-sm text-slate-400"
+									>Jun 2021 – Mar 2023</span
+								>
+							</header>
+							<ul class="list-disc pl-5 space-y-2 text-slate-200">
+								<li>
+									Contributed to two diverse projects,
+									exploring and applying a wide range of
+									technologies, tools, and frameworks, which
+									broadened technical expertise and fostered
+									adaptability in dynamic development
+									environments.
+								</li>
+								<li>
+									Engineered both frontend and backend
+									components, utilizing HTML, CSS, JavaScript,
+									React Native for user interfaces, and Spring
+									Boot, Microservices, and MySQL for product
+									functionality.
+								</li>
+								<li>
+									Designed and integrated RESTful APIs,
+									leveraging Postman for testing and
+									validation, for streamlined communication
+									between client and server.
+								</li>
+								<li>
+									Applied solid UI and UX design principles,
+									consistently adhering to industry best
+									practices to deliver intuitive and
+									user-friendly interfaces, thereby improving
+									customer satisfaction and engagement.
+								</li>
+								<li>
+									Developed and maintained microservices
+									architectures, implementing secure data
+									storage and access protocols, which
+									strengthened system security and modularity.
+								</li>
+								<li>
+									Conducted comprehensive code reviews and
+									managed version control with Git, for code
+									quality and maintainability.
+								</li>
+								<li>
+									Collaborated closely with cross-functional
+									teams, including QA and product management,
+									to diagnose and resolve complex software
+									defects, resulting in improved system
+									reliability and performance.
+								</li>
+								<li>
+									Participated actively in Agile development
+									cycles, contributing to sprint planning,
+									daily stand-ups, and retrospectives, which
+									facilitated timely delivery of project
+									milestones and continuous process
+									improvement.
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="relative">
+						<span
+							class="absolute -left-[13px] top-1 w-6 h-6 rounded-full bg-base border-4 border-accent"
+						></span>
+						<div
+							class="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4"
+						>
+							<header
+								class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3"
+							>
+								<div>
+									<h3 class="text-xl font-semibold">
+										Mobile Application Developer Intern
+									</h3>
+									<p class="text-slate-300">
+										FindMind Analytics — Remote
+									</p>
+								</div>
+								<span class="text-sm text-slate-400"
+									>Jul 2021 – Sept 2021</span
+								>
+							</header>
+							<ul class="list-disc pl-5 space-y-2 text-slate-200">
+								<li>
+									Developed mobile banking app for teenagers
+									with parental controls, using Flutter for
+									cross-platform deployment.
+								</li>
+								<li>
+									Enhanced app performance and scalability by
+									integrating Firebase, improving speed and
+									reliability.
+								</li>
+								<li>
+									Launched the ZuPay app on iOS and Android,
+									reaching over 10,000 users in the latest
+									assessment.
+								</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section
+				id="skills"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-6"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-glow"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">Skills</h2>
+				</div>
+				<div class="grid gap-6 md:grid-cols-2">
+					<article
+						class="rounded-2xl border border-white/10 p-5 space-y-3"
+					>
+						<h3 class="text-xl font-semibold text-accent">
+							Technical Skills
+						</h3>
+						<p class="text-slate-200">
+							Python, Java, JavaScript, C++, TensorFlow, Keras,
+							Scikit-learn, PyTorch, Transformers, Deep Learning,
+							Machine Learning, Natural Language Processing (NLP),
+							Computer Vision, Predictive Modeling, OpenCV, Data
+							Structures, Algorithms, Object-Oriented Programming,
+							Distrbuted Systems, Higher Performance Computing
+						</p>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-5 space-y-3"
+					>
+						<h3 class="text-xl font-semibold text-accent">
+							Tools & Frameworks
+						</h3>
+						<p class="text-slate-200">
+							OpenCV, PytTorch, Node, Express, Spring Boot, React,
+							Flutter, XML, Docker, Bash, REST APIs, HPC Job
+							Scheduling, JIRA, Agile, GitHub, Linux, Generative
+							AI, LangChain
+						</p>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-5 space-y-3"
+					>
+						<h3 class="text-xl font-semibold text-accent">
+							Databases & Cloud Technologies
+						</h3>
+						<p class="text-slate-200">
+							MySQL, MongoDB, SQL, Firebase, Google Cloud, AWS -
+							EC2, Lambda, DynamoDB, ALB, RDS, S3
+						</p>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-5 space-y-3"
+					>
+						<h3 class="text-xl font-semibold text-accent">
+							Soft Skills
+						</h3>
+						<p class="text-slate-200">
+							Problem Solving, Communication, Team Collaboration,
+							Adaptability, Critical Thinking, Time Management
+						</p>
+					</article>
+				</div>
+			</section>
+			<section
+				id="projects"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-6"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-accent"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">
+						Projects
+					</h2>
+				</div>
+				<div class="grid gap-6">
+					<article
+						class="rounded-2xl border border-white/10 p-6 space-y-3 hover:border-accent/60 transition"
+					>
+						<header
+							class="flex flex-col lg:flex-row lg:justify-between gap-2"
+						>
+							<h3 class="text-xl font-semibold">
+								PolyRootNet: A Neural Network for Finding Roots
+								of Polynomials
+							</h3>
+							<p class="text-sm text-slate-400">
+								Python, TensorFlow, NumPy | Feb 2025
+							</p>
+						</header>
+						<ul class="list-disc pl-5 space-y-2 text-slate-200">
+							<li>
+								Engineered a transformer-based neural network to
+								accurately determine roots of high-degree
+								polynomials, overcoming precision and
+								performance challenges.
+							</li>
+							<li>
+								Trained on diverse polynomial datasets, enabling
+								robust generalization across varying
+								complexities.
+							</li>
+							<li>
+								Surpassed traditional algorithms in precision
+								through innovative deep learning techniques,
+								enhancing root-finding accuracy.
+							</li>
+							<li>
+								Optimized model using TensorFlow and advanced
+								transformer architectures, significantly
+								boosting computational efficiency.
+							</li>
+						</ul>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-6 space-y-3 hover:border-accent/60 transition"
+					>
+						<header
+							class="flex flex-col lg:flex-row lg:justify-between gap-2"
+						>
+							<h3 class="text-xl font-semibold">
+								BTumor: Brain Tumor Prediction System
+							</h3>
+							<p class="text-sm text-slate-400">
+								Python, Scikit-learn, TensorFlow | Jan 2025
+							</p>
+						</header>
+						<ul class="list-disc pl-5 space-y-2 text-slate-200">
+							<li>
+								Constructed a model to classify brain tumor
+								types from medical images, leveraging a
+								comprehensive dataset.
+							</li>
+							<li>
+								Implemented and refined algorithms like Random
+								Forest and SVM to maximize prediction accuracy.
+							</li>
+							<li>
+								Achieved a Dice Score of 0.90 and IoU Score of
+								0.85, indicating high precision in segmentation
+								tasks.
+							</li>
+							<li>
+								Deployed using TensorFlow, integrating
+								seamlessly into clinical decision support
+								systems with high precision and recall.
+							</li>
+						</ul>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-6 space-y-3 hover:border-accent/60 transition"
+					>
+						<header
+							class="flex flex-col lg:flex-row lg:justify-between gap-2"
+						>
+							<h3 class="text-xl font-semibold">
+								CuisineQuest - Android Application
+							</h3>
+							<p class="text-sm text-slate-400">
+								Kotlin, SQLite | Mar 2024
+							</p>
+						</header>
+						<ul class="list-disc pl-5 space-y-2 text-slate-200">
+							<li>
+								Engineered and launched an Android application
+								utilizing Kotlin and Spoonacular APIs to deliver
+								a dynamic food recipe platform.
+							</li>
+							<li>
+								Integrated features such as a local SQLite
+								database for offline data storage, user
+								preferences, filters, and custom recipe creation
+								using Material UI, enabling users to curate and
+								manage their culinary preferences seamlessly.
+							</li>
+						</ul>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-6 space-y-3 hover:border-accent/60 transition"
+					>
+						<header
+							class="flex flex-col lg:flex-row lg:justify-between gap-2"
+						>
+							<h3 class="text-xl font-semibold">
+								Custom Fantasy Football
+							</h3>
+							<p class="text-sm text-slate-400">
+								Pandas, Numpy, GCP Recipes, Hadoop | Apr 2023
+							</p>
+						</header>
+						<ul class="list-disc pl-5 space-y-2 text-slate-200">
+							<li>
+								Architected a data-driven Fantasy Football Game
+								on Google Cloud Platform using OSEMN Process,
+								providing insights into team optimization
+								strategies.
+							</li>
+							<li>
+								Orchestrated data management with Pandas and
+								Numpy, executed cleaning with GCP Recipes, and
+								processed large files using Hadoop and Spark
+								Clusters.
+							</li>
+						</ul>
+					</article>
+					<article
+						class="rounded-2xl border border-white/10 p-6 space-y-3 hover:border-accent/60 transition"
+					>
+						<header
+							class="flex flex-col lg:flex-row lg:justify-between gap-2"
+						>
+							<h3 class="text-xl font-semibold">
+								CampSite Camps
+							</h3>
+							<p class="text-sm text-slate-400">
+								Express, React, Node, Heroku, Mongo Atlas | Jul
+								2021
+							</p>
+						</header>
+						<ul class="list-disc pl-5 space-y-2 text-slate-200">
+							<li>
+								Developed and deployed a MERN Stack web
+								application for camping enthusiasts, leveraging
+								React for dynamic web page rendering.
+								Facilitated user engagement by enabling trip
+								planning and promoting outdoor activities.
+							</li>
+							<li>
+								Implemented OAuth 2.0 for user authentication,
+								and managed MongoDB Atlas for data storage.
+							</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+			<section
+				id="publications"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-4"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-glow"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">
+						Research Publications
+					</h2>
+				</div>
+				<article
+					class="rounded-2xl border border-white/10 p-6 space-y-3"
+				>
+					<p class="text-slate-200">
+						Matthew, Davis
+						<span class="font-semibold">Aakash Kulkarni</span>,
+						Mainsh Motwani, "Automatically Detecting Heterogeneous
+						Bugs in High-Performance Computing Scientific Software."
+						<em>arXiv preprint</em> arXiv: (ID 2501.09872) (2025).
+						<a
+							href="https://arxiv.org/pdf/2501.09872"
+							class="text-accent underline"
+							>Download Paper</a
+						>
+						— Submitted to ISC 2025, under review
+					</p>
+					<ul class="list-disc pl-5 space-y-2 text-slate-200">
+						<li>
+							Contributed as Important Author to this research
+							paper.
+						</li>
+						<li>
+							Growing HPC demands these days, there is a
+							requirement for finding heterogenous bugs, and our
+							research aims to focus on Scientific software.
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section
+				id="certifications"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-4"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-accent"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">
+						Certifications
+					</h2>
+				</div>
+				<ul class="list-disc pl-5 space-y-2 text-slate-200">
+					<li>
+						AWS Cloud, Certified by AICTE and Edu Skills Foundation
+						(January 2022)
+					</li>
+					<li>
+						Coursera Certified - AWS Cloud Essential Skills,
+						mastering AWS Cloud Practitioner tools (June 2021)
+					</li>
+					<li>
+						Oracle Certified - SQL, comprehensive understanding of
+						Oracle SQL concepts (April 2020)
+					</li>
+				</ul>
+			</section>
+			<section
+				id="achievements"
+				class="bg-card border border-white/10 rounded-3xl p-8 space-y-4"
+			>
+				<div class="flex items-center gap-3">
+					<span class="w-2 h-2 rounded-full bg-glow"></span>
+					<h2 class="text-2xl font-semibold tracking-wide">
+						Achievements
+					</h2>
+				</div>
+				<article
+					class="rounded-2xl border border-white/10 p-6 space-y-3"
+				>
+					<div
+						class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+					>
+						<p class="text-slate-200 font-semibold">
+							Secured 1st Place in OSU Winter 2024 Hackathon.
+						</p>
+						<span class="text-sm text-slate-400">Mar 2024</span>
+					</div>
+					<ul class="list-disc pl-5 text-slate-200 space-y-2">
+						<li>
+							Developed "Guitar Hub," a web app featuring an
+							advanced guitar tuner and AI-powered song analysis
+							tools using OpenAI and Hugging Face models,
+							enhancing music theory understanding and real-time
+							pitch detection.
+						</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+		<footer
+			class="relative z-10 border-t border-white/10 py-6 text-center text-sm text-slate-400"
+		>
+              Last Upadted: 3rd January 2026
+		</footer>
+		<script>
+			const links = document.querySelectorAll(".nav-link");
+			const sections = Array.from(links).map((link) =>
+				document.querySelector(link.getAttribute("href"))
+			);
+			function setActiveLink() {
+				const scrollPos = window.scrollY + 140;
+				sections.forEach((section, idx) => {
+					if (!section) return;
+					const top = section.offsetTop;
+					const bottom = top + section.offsetHeight;
+					if (scrollPos >= top && scrollPos < bottom) {
+						links[idx].classList.add(
+							"border-accent",
+							"text-accent"
+						);
+					} else {
+						links[idx].classList.remove(
+							"border-accent",
+							"text-accent"
+						);
+					}
+				});
+			}
+			document.getElementById("year").textContent =
+				new Date().getFullYear();
+			document.addEventListener("scroll", setActiveLink, {
+				passive: true,
+			});
+			setActiveLink();
+		</script>
+	</body>
 </html>
