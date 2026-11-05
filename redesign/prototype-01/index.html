@@ -88,6 +88,7 @@
   .hero-shell{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
   .hero-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.55}
   .hero{position:relative;z-index:1;padding:78px 0 44px;display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:end}
+  .hero > div,.hero > aside{position:relative;z-index:1}
   .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(50px,7.6vw,100px);line-height:.92;letter-spacing:-3.4px;margin:0 0 22px}
   .hero h1 em{font-style:italic;color:var(--accent);font-weight:500}
   .hero .lede{font-size:clamp(17px,2vw,21px);line-height:1.55;color:var(--ink2);max-width:640px;margin:0 0 26px}
@@ -307,7 +308,7 @@
   body.concept-kinetic .hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(40px);opacity:.55;animation:floaty 9s ease-in-out infinite}
   body.concept-kinetic .hero::before{width:42vw;height:42vw;max-width:520px;max-height:520px;background:var(--accentSoft);left:-12vw;top:-14vw}
   body.concept-kinetic .hero::after{width:30vw;height:30vw;max-width:380px;max-height:380px;background:color-mix(in srgb,var(--accent) 22%,transparent);right:-8vw;bottom:-12vw;animation-delay:-4s}
-  body.concept-kinetic .portrait{border-radius:0;transform:rotate(-2deg);border:2px solid var(--ink)}
+  body.concept-kinetic .portrait{border-radius:0;rotate:-2deg;border:2px solid var(--ink)}
   body.concept-kinetic .portrait:hover img{transform:scale(1.03)}
   body.concept-kinetic .portrait figcaption{background:linear-gradient(0deg,rgba(0,0,0,.7),transparent)}
   body.concept-kinetic .card{border-radius:0}
