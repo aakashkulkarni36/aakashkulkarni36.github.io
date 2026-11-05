@@ -22,7 +22,7 @@
   }
   html[data-theme="dark"]{
     --canvas:#121214; --surface:#1B1A1D; --muted:#232226;
-    --ink:#F2EDE6; --ink2:#9A938A; --line:#2E2C29;
+    --ink:#F2EDE6; --ink2:#B8B0A6; --line:#3A3834;
     --accent:#E0593C; --accentSoft:#3A211C; --onAccent:#121214;
     --shadow:0 1px 0 rgba(0,0,0,.25),0 18px 50px -28px rgba(0,0,0,.7);
   }
@@ -122,10 +122,15 @@
 
   /* sections */
   section{padding:64px 0}
+  #work{background:linear-gradient(180deg,var(--canvas) 0%,color-mix(in srgb,var(--canvas) 94%,var(--accent)) 100%)}
   .sec-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}
   .sec-head h2{font-family:var(--serif);font-size:clamp(30px,4vw,44px);line-height:1.05;letter-spacing:-1.2px;margin:0}
   .sec-head p{margin:0;color:var(--ink2);font-size:14px;max-width:460px}
   .sec-head .count{font-family:var(--mono);font-size:11px;color:var(--ink2);letter-spacing:.12em;text-transform:uppercase}
+  .sec-kicker{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .sec-kicker .num{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 8px}
+  .sec-kicker .label{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
+  .work-rule{height:2px;background:linear-gradient(90deg,var(--accent),transparent);border:0;margin:0 0 30px}
 
   /* work */
   .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
@@ -179,7 +184,7 @@
   .diagram-pipeline .node b{color:var(--accent);font-family:var(--serif);font-size:14px;letter-spacing:0;margin-right:6px}
 
   /* human */
-  .human-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .human-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
   .human-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .25s ease}
   .human-card:hover{transform:translateY(-3px);box-shadow:0 20px 50px -30px rgba(22,22,26,.4)}
   .human-card .icon{width:34px;height:34px;border-radius:10px;background:var(--accentSoft);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
@@ -400,10 +405,15 @@
 
   <section id="work">
     <div class="wrap">
+      <div class="sec-kicker reveal">
+        <span class="num">01</span>
+        <span class="label">Systems &amp; research</span>
+      </div>
       <div class="sec-head reveal">
         <h2>Selected work</h2>
         <p>Four systems that show how I think. Each card starts with the problem, then what I built and the engineering underneath.</p>
       </div>
+      <hr class="work-rule reveal">
 
       <div class="work-grid">
         <article class="card feature reveal">
@@ -498,8 +508,6 @@
           <a class="more-item" href="#contact"><span class="more-name">Soranix</span><span class="more-desc">Android 16 desktop platform — proot Debian, XFCE4, Termux-X11 over Unix sockets. No root, no TCP exposure.</span><span class="more-arrow">→</span></a>
           <a class="more-item" href="https://github.com/aakashkulkarni36/OSUHackathonWinter2024" target="_blank" rel="noopener"><span class="more-name">Guitar Hub</span><span class="more-desc">1st place, OSU Winter Hackathon 2024. Browser guitar tuner with real-time pitch detection and AI song analysis.</span><span class="more-arrow">→</span></a>
           <a class="more-item" href="#contact"><span class="more-name">AWS Infrastructure Automation</span><span class="more-desc">Reproducible AWS environments with Terraform — VPC, EC2, RDS, S3, Route 53, and security groups.</span><span class="more-arrow">→</span></a>
-          <a class="more-item" href="#contact"><span class="more-name">Django E-Commerce Platform</span><span class="more-desc">Full-stack storefront with Django, PostgreSQL, Docker, and AWS — JWT auth, Nginx, query tuning.</span><span class="more-arrow">→</span></a>
-          <a class="more-item" href="https://github.com/aakashkulkarni36/mac_aerospace_ricing" target="_blank" rel="noopener"><span class="more-name">Mac aerospace ricing</span><span class="more-desc">macOS theming and dotfiles. Aerospace-grade ricing.</span><span class="more-arrow">→</span></a>
         </div>
       </div>
     </div>
@@ -529,6 +537,12 @@
           <h3>Gym</h3>
           <p>Strength training, mostly compound lifts. The gym is where I debug my own focus. Consistency beats intensity, in code and in training.</p>
           <span class="mini">PRs on request →</span>
+        </div>
+        <div class="human-card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
+          <h3>Ricing</h3>
+          <p>macOS and Linux desktop ricing — window managers, dotfiles, and themes. I like making a machine feel like mine.</p>
+          <a class="mini" href="https://github.com/aakashkulkarni36/mac_aerospace_ricing" target="_blank" rel="noopener">See the old setup →</a>
         </div>
       </div>
     </div>
@@ -688,6 +702,7 @@
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
     <span>© <span id="year">2026</span> Aakash Kulkarni. Built with paper, ink, and a well-timed gym break.</span>
+    <span>Designed and built with AI assistance. Every project, role, and result here is real, and the work is mine.</span>
     <span class="hint" id="konamiHint">psst — try ↑↑↓↓←→←→BA · <a href="#work">back to top ↑</a></span>
   </div>
 </footer>
@@ -724,8 +739,7 @@
   const themeLabel = document.getElementById('themeLabel');
   const themeIcon = document.getElementById('themeIcon');
   const stored = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initial = stored || (prefersDark ? 'dark' : 'light');
+  const initial = stored || 'light';
   setTheme(initial);
 
   function setTheme(mode){
