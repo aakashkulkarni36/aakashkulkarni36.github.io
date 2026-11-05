@@ -163,7 +163,7 @@
   .more-work{margin-top:8px}
   .more-list{display:grid;gap:0;border-top:1px solid var(--line)}
   .more-item{display:grid;grid-template-columns:220px 1fr auto;gap:20px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink)}
-  .more-item:hover{color:var(--accent);text-decoration:none}
+  a.more-item:hover{color:var(--accent);text-decoration:none}
   .more-name{font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:-.3px}
   .more-desc{font-size:14px;color:var(--ink2)}
   .more-arrow{font-family:var(--mono);color:var(--accent)}
@@ -435,7 +435,7 @@
               <div class="ps-row eng"><b>Engineering</b><span>Reliable orchestration across untrusted web flows, idempotent state, and human safety gates.</span></div>
             </div>
             <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">LangChain</span><span class="tag">Next.js</span><span class="tag">SQLite</span></div>
-            <a class="arrow" href="#contact">Pipeline walkthrough on request <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+
           </div>
         </article>
 
@@ -476,7 +476,7 @@
               <div class="ps-row eng"><b>Engineering</b><span>Ports-and-adapters, one composition root, structured logging, no AI in the app.</span></div>
             </div>
             <div class="tags"><span class="tag">SwiftUI</span><span class="tag">Firebase</span><span class="tag">Design system</span></div>
-            <a class="arrow" href="#contact">Case study on request <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+
           </div>
         </article>
 
@@ -492,7 +492,7 @@
               <div class="ps-row eng"><b>Engineering</b><span>Frame-accurate rendering, reproducible builds, and versioned scenes.</span></div>
             </div>
             <div class="tags"><span class="tag">Playwright</span><span class="tag">FFmpeg</span><span class="tag">Python</span><span class="tag">4K</span></div>
-            <a class="arrow" href="#contact">Watch a sample <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+
           </div>
         </article>
       </div>
@@ -503,9 +503,9 @@
           <p>Smaller systems, experiments, and the cloud/backend projects from my resume.</p>
         </div>
         <div class="more-list">
-          <a class="more-item" href="#contact"><span class="more-name">Soranix</span><span class="more-desc">Android 16 desktop platform — proot Debian, XFCE4, Termux-X11 over Unix sockets. No root, no TCP exposure.</span><span class="more-arrow">→</span></a>
+          <div class="more-item"><span class="more-name">Soranix</span><span class="more-desc">Android 16 desktop platform — proot Debian, XFCE4, Termux-X11 over Unix sockets. No root, no TCP exposure.</span></div>
           <a class="more-item" href="https://github.com/aakashkulkarni36/OSUHackathonWinter2024" target="_blank" rel="noopener"><span class="more-name">Guitar Hub</span><span class="more-desc">1st place, OSU Winter Hackathon 2024. Browser guitar tuner with real-time pitch detection and AI song analysis.</span><span class="more-arrow">→</span></a>
-          <a class="more-item" href="#contact"><span class="more-name">AWS Infrastructure Automation</span><span class="more-desc">Reproducible AWS environments with Terraform — VPC, EC2, RDS, S3, Route 53, and security groups.</span><span class="more-arrow">→</span></a>
+          <div class="more-item"><span class="more-name">AWS Infrastructure Automation</span><span class="more-desc">Reproducible AWS environments with Terraform — VPC, EC2, RDS, S3, Route 53, and security groups.</span></div>
         </div>
       </div>
     </div>
@@ -522,25 +522,21 @@
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/><rect x="2" y="6" width="20" height="12" rx="4"/></svg></div>
           <h3>Video games</h3>
           <p>RPGs, roguelikes, and strategy games. I like systems with deep rules and fair failure. The backlog is a lifestyle.</p>
-          <a class="mini" href="#contact">Ask me for the list →</a>
         </div>
         <div class="human-card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h10l1 7H6L7 3Z"/><path d="M6 10c0 4 2 7 6 7s6-3 6-7"/><path d="M9 21h6"/></svg></div>
           <h3>Cooking</h3>
           <p>South Indian classics and experimental weeknight dinners. I measure with intent, taste constantly, and believe a good biryani is a systems problem.</p>
-          <span class="mini">Try the Konami code →</span>
         </div>
         <div class="human-card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6M20 9v6M7 7v10M17 7v10M7 12h10"/></svg></div>
           <h3>Gym</h3>
           <p>Strength training, mostly compound lifts. The gym is where I debug my own focus. Consistency beats intensity, in code and in training.</p>
-          <span class="mini">PRs on request →</span>
         </div>
         <div class="human-card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></div>
           <h3>Ricing</h3>
           <p>macOS and Linux desktop ricing — window managers, dotfiles, and themes. I like making a machine feel like mine.</p>
-          <a class="mini" href="https://github.com/aakashkulkarni36/mac_aerospace_ricing" target="_blank" rel="noopener">See the old setup →</a>
         </div>
       </div>
     </div>
