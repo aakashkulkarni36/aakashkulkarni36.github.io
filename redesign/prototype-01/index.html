@@ -680,8 +680,7 @@
       <div class="reveal">
         <h2>Let’s build <em>something</em> reliable.</h2>
         <p>I’m open to backend, cloud, GenAI, and systems roles. If you’re working on hard problems — or just want to talk shop — send a note. I read everything.</p>
-        <!-- Replace YOUR_FORM_ID with your Formspree form ID. Until then, the form falls back to mailto. -->
-        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqppngjo" method="POST">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name">
@@ -871,21 +870,6 @@
         card.style.transform = 'perspective(900px) rotateX(' + (-py * 4).toFixed(2) + 'deg) rotateY(' + (px * 4).toFixed(2) + 'deg) translateY(-2px)';
       });
       card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-    });
-  }
-
-  // contact form fallback until Formspree is configured
-  const contactForm = document.getElementById('contactForm');
-  if(contactForm){
-    contactForm.addEventListener('submit', (e) => {
-      if(!contactForm.action.includes('YOUR_FORM_ID')) return;
-      e.preventDefault();
-      const name = contactForm.querySelector('#name').value.trim();
-      const email = contactForm.querySelector('#email').value.trim();
-      const message = contactForm.querySelector('#message').value.trim();
-      const subject = encodeURIComponent('Portfolio contact — ' + name);
-      const body = encodeURIComponent(message + '\n\n— ' + name + '\n' + email);
-      window.location.href = 'mailto:aakashkulkarni36@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
 
