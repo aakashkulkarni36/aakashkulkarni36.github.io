@@ -516,7 +516,7 @@
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/><rect x="2" y="6" width="20" height="12" rx="4"/></svg></div>
           <h3>Video games</h3>
           <p>RPGs, roguelikes, and strategy games. I like systems with deep rules and fair failure. The backlog is a lifestyle.</p>
-          <a class="mini" href="mailto:aakashkulkarni36@gmail.com?subject=Video%20games%20list">Ask me for the list →</a>
+          <a class="mini" href="#contact">Ask me for the list →</a>
         </div>
         <div class="human-card reveal">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h10l1 7H6L7 3Z"/><path d="M6 10c0 4 2 7 6 7s6-3 6-7"/><path d="M9 21h6"/></svg></div>
@@ -677,12 +677,10 @@
         <div class="hero-actions" style="margin-top:22px">
           <a class="btn btn-primary" href="mailto:aakashkulkarni36@gmail.com">Email me</a>
           <a class="btn btn-ghost" href="assets/aakash-kulkarni-resume.pdf" download>Download resume</a>
-          <button class="copy-btn" id="copyEmail" data-copy="aakashkulkarni36@gmail.com">Copy email</button>
         </div>
         <p style="margin-top:16px;font-size:12px;color:var(--ink2)">F-1 STEM OPT · Sponsorship required · Open to relocation</p>
       </div>
       <div class="contact-links reveal">
-        <a href="mailto:aakashkulkarni36@gmail.com"><span>Email</span> aakashkulkarni36@gmail.com</a>
         <a href="https://www.linkedin.com/in/aakashkulkarni36/"><span>LinkedIn</span> /in/aakashkulkarni36</a>
         <a href="https://github.com/aakashkulkarni36"><span>GitHub</span> /aakashkulkarni36</a>
         <a href="https://www.aakashkulkarni.dev"><span>Website</span> aakashkulkarni.dev</a>
@@ -851,19 +849,6 @@
         card.style.transform = 'perspective(900px) rotateX(' + (-py * 4).toFixed(2) + 'deg) rotateY(' + (px * 4).toFixed(2) + 'deg) translateY(-2px)';
       });
       card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-    });
-  }
-
-  // copy email
-  const copyBtn = document.getElementById('copyEmail');
-  if(copyBtn){
-    copyBtn.addEventListener('click', async () => {
-      try{
-        await navigator.clipboard.writeText(copyBtn.dataset.copy);
-        const old = copyBtn.textContent;
-        copyBtn.textContent = 'Copied';
-        setTimeout(() => { copyBtn.textContent = old; }, 1600);
-      }catch(e){ copyBtn.textContent = 'Select + copy'; }
     });
   }
 
