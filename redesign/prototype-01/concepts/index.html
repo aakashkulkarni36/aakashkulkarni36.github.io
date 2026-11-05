@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept Lab — Aakash Kulkarni</title>
+<style>
+  :root{
+    --canvas:#FAF7F2; --surface:#FFFFFF; --ink:#16161A; --ink2:#6B6560;
+    --line:#D9D2C7; --accent:#B5432A; --accentSoft:#F3DED8;
+    --serif:"New York","Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
+    --mono:"SF Mono","JetBrains Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--sans);background-image:radial-gradient(1000px 500px at 80% -10%, rgba(181,67,42,.08), transparent 60%)}
+  .wrap{max-width:1400px;margin:0 auto;padding:0 28px}
+  header{padding:36px 0 18px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:baseline;gap:10px;font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:-.3px}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;transform:translateY(-2px)}
+  h1{font-family:var(--serif);font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-1.8px;margin:22px 0 12px}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lede{color:var(--ink2);font-size:15.5px;max-width:780px;line-height:1.6;margin:0 0 22px}
+  .lede a{color:var(--accent)}
+  .note{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin-bottom:8px}
+  .top-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0}
+  .top-actions a{border:1px solid var(--line);background:var(--surface);color:var(--ink2);border-radius:999px;padding:8px 12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+  .top-actions a:hover{border-color:var(--accent);color:var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr;gap:26px;padding:26px 0 70px}
+  .frame-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 18px 50px -30px rgba(22,22,26,.35)}
+  .frame-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--surface)}
+  .frame-head h2{font-family:var(--serif);font-size:22px;margin:0;letter-spacing:-.4px}
+  .frame-head .tag{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:4px 9px}
+  .frame-head .meta{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+  iframe{display:block;width:100%;height:820px;border:0;background:var(--canvas)}
+  .frame-foot{display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink2);flex-wrap:wrap}
+  .frame-foot a{color:var(--accent);text-decoration:none}
+  .frame-foot a:hover{text-decoration:underline}
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 8px;padding:18px 0 0}
+  .why div{border-top:1px solid var(--line);padding-top:12px;font-size:13.5px;color:var(--ink2);line-height:1.55}
+  .why b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  @media(max-width:900px){.why{grid-template-columns:1fr}iframe{height:680px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Concept Lab</div>
+    <h1>Three ways to <em>think</em>, not three colors.</h1>
+    <p class="lede">Same person, same facts, three structurally different sites. Each one has its own motion layer: an animated particle field, a scroll progress line, a parallax portrait, and card tilt. Pick the one that feels like you. The <a href="../designs/">Palette Lab</a> is separate.</p>
+    <div class="note">Editorial Motion · Terminal · Kinetic</div>
+    <div class="top-actions">
+      <a href="../designs/">Palettes →</a>
+      <a href="../layouts/">Layouts →</a>
+      <a href="../index.html">Open base site →</a>
+    </div>
+    <div class="why">
+      <div><b>Editorial Motion</b>Paper &amp; Vermilion. Serif narrator, sans interface. The calmest, most readable option.</div>
+      <div><b>Terminal</b>A dark, monospace engineer console. Command prompts, scanlines, green accent. The most “technical.”</div>
+      <div><b>Kinetic</b>Oversized type, floating color fields, asymmetric cards. The most expressive and motion-forward.</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="frame-card">
+      <div class="frame-head">
+        <h2>01 — Editorial Motion</h2>
+        <span class="tag">Default</span>
+      </div>
+      <iframe src="../index.html?concept=editorial" title="Editorial Motion concept" loading="lazy"></iframe>
+      <div class="frame-foot"><span>Beige paper, serif narrator, quiet particle field</span><a href="../index.html?concept=editorial" target="_blank">Open full →</a></div>
+    </div>
+
+    <div class="frame-card">
+      <div class="frame-head">
+        <h2>02 — Terminal</h2>
+        <span class="tag">Engineer console</span>
+      </div>
+      <iframe src="../index.html?concept=terminal" title="Terminal concept" loading="lazy"></iframe>
+      <div class="frame-foot"><span>Dark monospace, blinking cursor, scanlines, terminal-window cards</span><a href="../index.html?concept=terminal" target="_blank">Open full →</a></div>
+    </div>
+
+    <div class="frame-card">
+      <div class="frame-head">
+        <h2>03 — Kinetic</h2>
+        <span class="tag">Motion-forward</span>
+      </div>
+      <iframe src="../index.html?concept=kinetic" title="Kinetic concept" loading="lazy"></iframe>
+      <div class="frame-foot"><span>Oversized type, floating color fields, asymmetric cards</span><a href="../index.html?concept=kinetic" target="_blank">Open full →</a></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
