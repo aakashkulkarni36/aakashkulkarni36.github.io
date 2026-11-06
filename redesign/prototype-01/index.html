@@ -101,7 +101,7 @@
   /* hero */
   .hero-shell{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
   .hero-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.55}
-  .hero{position:relative;z-index:1;padding:78px 0 44px;display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:end}
+  .hero{position:relative;z-index:1;padding:78px 28px 44px;display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:end}
   .hero > div,.hero > aside{position:relative;z-index:1}
   .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(50px,7.6vw,100px);line-height:.92;letter-spacing:-3.4px;margin:0 0 22px}
   .hero h1 em{font-style:italic;color:var(--accent);font-weight:500}
@@ -233,7 +233,7 @@
 
   /* contact */
   .contact{background:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .contact-inner{padding:64px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}
+  .contact-inner{padding:64px 28px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}
   .contact h2{font-family:var(--serif);font-size:clamp(40px,6vw,76px);line-height:.98;letter-spacing:-2.2px;margin:0}
   .contact h2 em{font-style:italic;color:var(--accent)}
   .contact p{color:var(--ink2);font-size:15px;max-width:520px}
@@ -363,6 +363,46 @@
     .scroll-progress{transition:none}
   }
   @media(max-width:700px){.hero{padding-top:56px}.sec-head{flex-direction:column;align-items:start;gap:8px}}
+
+  /* ---- mobile ---- */
+  @media(max-width:640px){
+    .wrap{padding-left:20px;padding-right:20px}
+    .hero{padding:52px 20px 30px}
+    .contact-inner{padding:44px 20px 48px}
+
+    .hero h1{font-size:clamp(34px,10vw,44px);letter-spacing:-1.4px;line-height:.98;margin-bottom:18px}
+    .hero .lede{font-size:16px;line-height:1.6;margin-bottom:22px}
+    .hero .eyebrow{font-size:10px;letter-spacing:.08em;line-height:1.7}
+    .hero-actions{flex-direction:column;align-items:stretch;gap:10px}
+    .hero-actions .btn{width:100%;justify-content:center}
+    .hero-side{padding-top:20px}
+    .now-list .k{min-width:52px}
+
+    section{padding:48px 0}
+    .sec-head{gap:10px;margin-bottom:22px}
+    .sec-head h2{letter-spacing:-.8px}
+
+    .diagram{aspect-ratio:auto;min-height:0;padding:18px;flex-direction:column;gap:14px}
+    .diagram-flow{flex-direction:column;gap:6px;width:100%}
+    .diagram-node{width:100%;font-size:10px;padding:10px 12px}
+    .diagram-node b{font-size:13px}
+    .diagram-arrow{transform:rotate(90deg);line-height:1}
+    .diagram-pipeline{width:100%}
+    .diagram-pipeline .node{white-space:normal;font-size:10px;padding:9px 10px}
+    .diagram-caption{position:static;display:block;margin-top:12px;text-align:center}
+
+    .more-item{grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline}
+    .more-name{grid-column:1;grid-row:1}
+    .more-arrow{grid-column:2;grid-row:1}
+    .more-desc{grid-column:1/-1;grid-row:2}
+
+    .contact h2{font-size:clamp(30px,8.2vw,38px);letter-spacing:-1px}
+    .contact p{font-size:14px}
+    .contact-links a{font-size:11px}
+
+    .ticker-track{font-size:10px;gap:26px}
+    footer{padding:22px 0 30px;font-size:10px}
+  }
 </style>
 </head>
 <body>
